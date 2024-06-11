@@ -130,7 +130,11 @@ def about_me():
     # project 2 
     pro2 = "https://github.com/tranphuongmai/SQL_Ex_and_Poject/tree/main/project_toyandsci_SQL_PBI"
     st.markdown("**Distribution Company Daily Report**")
-    st.text("Describe the project ")
+    st.text("""
+   Building a daily dashboards which visualizes the KPI of a toy distribution company.
+   It includes 3 dashboard about sales, finance, stock  and staff. 
+    
+    """)
     st.text("""
             💻 Used Tools:
             ▪️ MySQL 
@@ -142,7 +146,12 @@ def about_me():
     # project 1 
     pro1 = "https://github.com/tranphuongmai"
     st.write("**E-commercial Sales Dashboard**")
-    st.text("Describe the project  ")
+    st.text("""
+    Building a sales dashboard which visualizes the KPI over 4 years of an E-commercial
+    company as: sales and profit evolution, point out the segment of company's main 
+    consumers, customer analysis for 'Personalized PR project', product analysis for 
+    inventory management.
+    """)
     st.text("""
             💻 Used Tools:
             ▪️ MS Excel 
