@@ -115,7 +115,7 @@ def about_me():
     
 
     # project 3 
-    pro3 = "https://github.com/tranphuongmai"
+    pro3 = "https://github.com/tranphuongmai/Python_Sklearn_Pandas"
     st.markdown("**Movie Recommendation System**")
     st.text("Describe the project ")
     st.text("""
