@@ -1,16 +1,9 @@
 # importing package
-
 import streamlit as st
 import pandas as pd
 
-
-
-
-
-
-
 def df1():
-    df1 = pd.read_csv(r"data\title.ratings.csv")
+    df1 = pd.read_csv(r"data/title.ratings.csv")
     st.subheader("This dataset is about the average ratings and the numbers of votes of  id which represents each title's type.")
     st.dataframe(df1)
     
@@ -22,7 +15,7 @@ def df1():
     If we visualize the distribution of each movie's frequency, we can not see much 
     because of a massive distribution in the interval 5 and less than 500 numbers of
     votes while the maximum number is 2.888.676.""")
-    st.image("asset\exploration_rating_numvotes.png")
+    st.image("asset/exploration_rating_numvotes.png")
 
     st.text("\n") 
     st.text("""
@@ -30,7 +23,7 @@ def df1():
     data distributes in the interval between 5 and 9, but its 9 deciles point out 
     that 90% of the dataset have a rate note higher than 5. Maybe we can choose this 
     condition to remove some outliers of the dataset.""")
-    st.image("asset\exploration_rating_rating.png")
+    st.image("asset/exploration_rating_rating.png")
 
     st.text("\n") 
     st.text("""
@@ -41,12 +34,12 @@ def df1():
     Because the bad notes which are less than 5 occurence in just the first quantile 
     of the dataset, we decide to remove this partie to keep only films with notes 
     higher than 5.""")
-    st.image("asset\exploration_rating_numvotesRate.png")
+    st.image("asset/exploration_rating_numvotesRate.png")
     
     
 
 def df2():
-    df2 = pd.read_csv(r"data\title.akas.csv")
+    df2 = pd.read_csv(r"data/title.akas.csv")
     st.subheader("This dataset provides information about linguistic versions of titles. There are 48.134.030 entries.")
     st.dataframe(df2)
 
@@ -57,7 +50,7 @@ def df2():
     which could be useful, so we tried to count the frequency of each 'titleId' for
     the 'numLanguages' and we noticed that 50% titles of the dataset have less than 
     20 linguistic versions including the original version.""")
-    st.image("asset\exploration_akas_missingvalues.png")
+    st.image("asset/exploration_akas_missingvalues.png")
     
     st.text("\n")
     st.text("""
@@ -65,17 +58,17 @@ def df2():
     most of the titles will have in average 2 to 10 languages, but there are also 
     exceptional cases which have up to 250 languages.
             """)
-    st.image("asset\exploration_akas_total.png")
+    st.image("asset/exploration_akas_total.png")
 
     st.text(" \n")
     st.text("""
     Then, we tried to identify the original language in the hope that we can use this
     feature, but the result is 100% missing. So we decided not to use this dataset.""")
-    st.image("asset\exploration_akas_missing_regional.png")
+    st.image("asset/exploration_akas_missing_regional.png")
 
     
 def df3():
-    df3 = pd.read_csv(r"data\title.crew.csv")
+    df3 = pd.read_csv(r"data/title.crew.csv")
     st.subheader("This dataset is condisered as a dimension table which contains 3  ID columns of title, director and writer.  ")
     st.dataframe(df3)
 
@@ -88,7 +81,7 @@ def df3():
     We found many titles having many directors and writers, more than what we had 
     expected. We supposed that they must belong to the category 'Series'.
                         """)
-    st.image("asset\exploration_crew_columns.png")
+    st.image("asset/exploration_crew_columns.png")
 
     st.text(" \n")
     st.text("""
@@ -97,9 +90,9 @@ def df3():
     which don't mention writer or director.""")
     col1, col2 = st.columns(2)
     with col1:
-        st.image("asset\exploration_crew_direct.png")
+        st.image("asset/exploration_crew_direct.png")
     with col2:    
-        st.image("asset\exploration_crew_writer.png")
+        st.image("asset/exploration_crew_writer.png")
 
     st.text("\n ")
     st.text("""
@@ -108,7 +101,7 @@ def df3():
    
 
 def df4():
-    df4 = pd.read_csv(r"data\title.episode.csv")
+    df4 = pd.read_csv(r"data/title.episode.csv")
     st.subheader("This dataset provides infomation about all the types 'Series' and their's episodes. So we can see one ID of title and one of sub-title (episode).")
     st.dataframe(df4)
 
@@ -118,7 +111,7 @@ def df4():
     Have a look at the distribution of Season numbers. We noticed that there are 
     something which are not normal here. Series with almost 1000 or 2000 seasons? 
             """)
-    st.image("asset\exploration_episode_boxplot.png")
+    st.image("asset/exploration_episode_boxplot.png")
 
     st.text("\n ")
     st.text("""
@@ -126,8 +119,8 @@ def df4():
     naming the series by using the year number, or we can say that it has no relation
     to the order of the series.       
             """)
-    st.image("asset\exploration_episode_weird1.png")
-    st.image("asset\exploration_episode_weird2.png")
+    st.image("asset/exploration_episode_weird1.png")
+    st.image("asset/exploration_episode_weird2.png")
 
     
     st.text("\n ")
@@ -136,14 +129,14 @@ def df4():
     is a massif occurence of this tytpe of title in the whole dataset. We will consider
     if we will keep this titles's type for our recommendation system or not.
             """)
-    st.image("asset\exploration_episode_top1.png")
-    st.image("asset\exploration_episode_top2.png")
+    st.image("asset/exploration_episode_top1.png")
+    st.image("asset/exploration_episode_top2.png")
 
     
 
 
 def df5():
-    df5 = pd.read_csv(r"data\title.basics.csv")
+    df5 = pd.read_csv(r"data/title.basics.csv")
     st.subheader("This dataset carries all the features important of more than 10 millions  titles as type of title, title's name, genres, etc.")
     st.dataframe(df5)
      
@@ -160,14 +153,14 @@ def df5():
     is taking up the majority of this dataset. As we considered that we want to have
     only short movie in our system, so we decied to remove this type of titles.       
             """)
-    st.image("asset\exploration_basic_type.png")
+    st.image("asset/exploration_basic_type.png")
 
     st.text("\n ")
     st.text("""
     Have a look at all the types of titles after removing the 'series'. We are going to
     compare the types 'video' and 'short' to see what is the difference between them.
             """)
-    st.image("asset\exploration_basic_type2.png")
+    st.image("asset/exploration_basic_type2.png")
 
     st.text("\n ")
     st.text("""
@@ -180,14 +173,14 @@ def df5():
             """)
     col1, col2 = st.columns(2)
     with col1:
-        st.image("asset\exploration_basic_short.png")
+        st.image("asset/exploration_basic_short.png")
     with col2:    
-        st.image("asset\exploration_basic_video.png")
+        st.image("asset/exploration_basic_video.png")
     
 
 
 def df6():
-    df6 = pd.read_csv(r"data\title.principals.csv")
+    df6 = pd.read_csv(r"data/title.principals.csv")
     st.subheader("This dataset contains information of all the production staffs of each title.")
     st.dataframe(df6)
      
@@ -200,18 +193,18 @@ def df6():
     This dataset will be merge with another one to get name of each person then we will
     combine it to the main dataset to get a fully informative dataset.
             """)
-    st.image("asset\exploration_principalc_1.png")
+    st.image("asset/exploration_principalc_1.png")
 
     st.text("\n ")
     st.text("""
     Let's have a look at people who contributed the most to arts industry but we might 
     never heard about their name.""")
-    st.image("asset\exploration_principalc_2.png")
+    st.image("asset/exploration_principalc_2.png")
     
 
 
 def df7():
-    df7 = pd.read_csv(r"data\name.basics.csv")
+    df7 = pd.read_csv(r"data/name.basics.csv")
     st.subheader("This dataset is about all of the people who dedicated to the arts industry, including philosophies already passed away as writers.")
     st.dataframe(df7)
      
@@ -222,45 +215,45 @@ def df7():
     can only use the column 'primaryName'-people's  name and 'nconst'-their ID to 
     merge with another dataset for details.
             """)
-    st.image("asset\exploration_df7.png")
+    st.image("asset/exploration_df7.png")
 
 
 ## Preprocessing
 def preprocessing():
     st.header("Overviewing filtered dataset")
     st.markdown("This is our main dataset which is merged by 2 datasets.")
-    tbr_staff =  pd.read_csv(r"data\basic_rating.csv")
+    tbr_staff =  pd.read_csv(r"data/basic_rating.csv")
     st.dataframe(tbr_staff)
     
     # Check missing values of each column
     st.markdown("Then, we check missing values by normalize the scale to a percentage. ")
     st.markdown("We decide to remove the column 'endYear' due to 100% of missing.")
     st.markdown("It seems like we also have missing values in columns 'genres' and 'runtimeMinutes' to handle. Let's do it together.")
-    st.image("asset\prepocessing3.png")
+    st.image("asset/prepocessing3.png")
 
 
     st.header("Try to fill missing values by using the additional dataset 'tmdb_full'")
     st.markdown("Luckily, we have an additional dataset from website tmdb with more than 300k titles, let's see if we can take advantage of this dataset or not. Now overview of the dataset 'tmdb_full.csv'.")
    
-    tmbd_before = pd.read_csv(r"data\tmdb_full.csv")
+    tmbd_before = pd.read_csv(r"data/tmdb_full.csv")
     st.dataframe(tmbd_before)
 
     st.markdown("The column 'genres' was setting as string so we can not work on it, need to use a module to convert it into correct type 'list of string'. Then we convert convert type of other columns to get same format as our main dataset.")
     
     
     st.markdown("Take a look at our efforts. Well done!")
-    st.image("asset\prepocessing4.png")
+    st.image("asset/prepocessing4.png")
 
 
     st.markdown("Create a dataframe with only null values of column 'genres' from main dataframe to filter missing values then we will use concat() to combine them together")
     
     
     st.markdown("Hooray! We got 7596 values from using the additional dataframe. This is the result. But we wtill have many problems with NaN of columns 'genres' and 'runtimeMinute'.")
-    st.image("asset\prepocessing5.png")
+    st.image("asset/prepocessing5.png")
  
 
     st.markdown("Let's have a look at the NaN distribution of each type of titles.")
-    st.image("asset\prepocessing6.png")
+    st.image("asset/prepocessing6.png")
 
     
     st.header("Check NaN of 'genres' of each 'titleType'")
@@ -284,7 +277,7 @@ def preprocessing():
     st.markdown("In order to observe better the distribution of each type, we removed all the outliers above 800 minutes.")
     st.markdown("Because the duration of each type is different, so we can not fill NaN by a general median of our dataset.")
     
-    st.image("asset\prepocessing1.png")
+    st.image("asset/prepocessing1.png")
 
 
     st.subheader("Method:")
@@ -307,7 +300,7 @@ def preprocessing():
     st.write("")
     st.markdown("We can not find a good solution to fill NaN of column 'genres', so we decided to drop all titles with NaN.")
     st.markdown("Then we combined our dataset with 2 others to get variables of staffs. Our final dataset will be like this:")
-    st.image("asset\prepocessing2.png")
+    st.image("asset/prepocessing2.png")
     st.write("")
     st.markdown("Due to the size of dataset, we can not excute the last step here. But we will show the KPI of our final dataset in the 'Movie Analysis' section.")
 
