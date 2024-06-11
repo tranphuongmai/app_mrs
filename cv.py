@@ -115,7 +115,7 @@ def about_me():
     
 
     # project 3 
-    pro3 = "https://github.com/tranphuongmai/Python_Sklearn_Pandas"
+    #pro3 = "https://github.com/tranphuongmai/Python_Sklearn_Pandas"
     st.markdown("**Movie Recommendation System**")
     st.text("""
     Using only Python programming language for implementing this project. We used
@@ -133,7 +133,7 @@ def about_me():
     st.write('\n')
    
     # project 2 
-    pro2 = "https://github.com/tranphuongmai/SQL_Ex_and_Poject/tree/main/project_toyandsci_SQL_PBI"
+    #pro2 = "https://github.com/tranphuongmai/SQL_Ex_and_Poject/tree/main/project_toyandsci_SQL_PBI"
     st.markdown("**Distribution Company Daily Report**")
     st.text("""
    Building 3 dashboards that visualize KPIs regarding sales, finance, inventory and
@@ -147,11 +147,11 @@ def about_me():
             ▪️ MySQL 
             ▪️ Power BI
             ▪️ Power Point, Agile, Trello""")
-    st.write(f"[Github](pro2)")
+    st.write(f"[Github](https://github.com/tranphuongmai/SQL_Ex_and_Poject/tree/main/project_toyandsci_SQL_PBI)")
     st.write('\n')
 
     # project 1 
-    pro1 = "https://github.com/tranphuongmai"
+    #pro1 = "https://github.com/tranphuongmai"
     st.write("**E-commercial Sales Dashboard**")
     st.text("""
     Building a sales dashboard which visualizes the KPI over 4 years of an E-commercial
@@ -165,7 +165,7 @@ def about_me():
             ▪️ MS Excel 
             ▪️ Power BI
             """)
-    st.write(f"[Github](pro1)")
+    st.write(f"[Github](https://github.com/tranphuongmai)")
 
     
     # --- SKILLS ---
