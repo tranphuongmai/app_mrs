@@ -16,7 +16,7 @@ def get_recom():
     st.write("The current movie title is", title)
 
     
-    df_return = pd.read_csv(r"data\return_movies.csv")
+    df_return = pd.read_csv(r"data/return_movies.csv")
    
     df_return.insert(0, 'Title', df_return.pop('Title'))
 
