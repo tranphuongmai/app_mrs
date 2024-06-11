@@ -129,7 +129,7 @@ def about_me():
             ▪️ Seaborn, Matplotlib, plotly express, Power BI
             ▪️ Agile, Trello, Canva, Streamlit
             """)
-    st.write(f"[{Github}]({pro3})")
+    st.write(f"[Github](https://github.com/tranphuongmai/Python_Sklearn_Pandas)")
     st.write('\n')
    
     # project 2 
