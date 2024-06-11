@@ -44,8 +44,8 @@ def main():
          of all the given datasets. We filtered to down-size into a dataset of 450k titles.
          We then clean and remove missing values to get a final one with 430k titles.         
                   """)
-          st.image("asset\home_page_filtering.png")
-          st.text("\n")
+          st.image("asset/home_page_filtering.png")
+          st.text("/n")
           st.text("""
 
          About the creation of the recommendation system, we first convert all the text 
@@ -59,7 +59,7 @@ def main():
          We then tried to change the hyperparameter to get our model better but we dont' see
          much improvement so we sorted values by setting the weight on Votes and Genres.
                   """)
-          st.image("asset\home2.png")
+          st.image("asset/home2.png")
 
      elif choice == "Data Exploration And Preprocessing":
           
@@ -125,16 +125,16 @@ def main():
                out the correlation between Votes and Average Ratings in order to co to the 
                conclusion that 'movies with high votes often have good ratings'.
 """)       
-          st.image("PBI1.png")
+          st.image("asset/PBI1.png")
 
-          st.text("\n")
+          st.text("/n")
           st.text("""
                Second and third dashboard will show the imponent titles and production staffs 
                accoring to title categories, staff categories and released year. There is also 
                a filter for genre categories.
 """)
-          st.image("PBI2.png")
-          st.image("PBI3.png")
+          st.image("asset/PBI2.png")
+          st.image("asset/PBI3.png")
 
      elif choice == "Movie Recommendation System":
           get_recom()
