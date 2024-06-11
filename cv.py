@@ -117,7 +117,12 @@ def about_me():
     # project 3 
     pro3 = "https://github.com/tranphuongmai/Python_Sklearn_Pandas"
     st.markdown("**Movie Recommendation System**")
-    st.text("Describe the project ")
+    st.text("""
+    Using only Python programming language for implementing this project. We used
+    Pandas for massive data exploration and preprocessing, then scikit-learn for 
+    creating the movie recommendation system. Thanks to Streamlit, we can deploy 
+    our system as an application.
+    """)
     st.text("""
             💻 Used Tools:
             ▪️ Python, Pandas, Scikit-learn 
@@ -131,9 +136,11 @@ def about_me():
     pro2 = "https://github.com/tranphuongmai/SQL_Ex_and_Poject/tree/main/project_toyandsci_SQL_PBI"
     st.markdown("**Distribution Company Daily Report**")
     st.text("""
-   Building a daily dashboards which visualizes the KPI of a toy distribution company.
-   It includes 3 dashboard about sales, finance, stock  and staff. 
-    
+   Building 3 dashboards that visualize KPIs regarding sales, finance, inventory and
+   personnel issues of a toy distribution company. The retrieved KPI are requested by
+   the Database Language (MySQL) which are then connected to PowerBI for visualization.
+   We worked in teams of 3 people by using Agile methodology and Trello tools to manage
+   each person's tasks.   
     """)
     st.text("""
             💻 Used Tools:
@@ -150,7 +157,8 @@ def about_me():
     Building a sales dashboard which visualizes the KPI over 4 years of an E-commercial
     company as: sales and profit evolution, point out the segment of company's main 
     consumers, customer analysis for 'Personalized PR project', product analysis for 
-    inventory management.
+    inventory management. All the dashboards have a filtering system according to year
+    and region.
     """)
     st.text("""
             💻 Used Tools:
