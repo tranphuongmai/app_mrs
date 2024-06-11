@@ -67,8 +67,9 @@ def main():
           choice_sub = st.sidebar.selectbox("Drop down to choose", submenu)
           
           if choice_sub == "Exploration":
-              st.link_button("Go to the code script", "https://github.com/tranphuongmai/Python_Sklearn_Pandas")
+              
               st.title(":blue[DATA EXPLORATION]")
+              st.link_button("Go to the code script", "https://github.com/tranphuongmai/Python_Sklearn_Pandas")
               st.text(""" 
                In this project, we worked on 7 mass datasets of more than 10 millions
                titles about movies, tvshow, videos, etc.  Dealing with files that are too 
@@ -141,6 +142,7 @@ def main():
 
      elif choice == "Movie Recommendation System":
           get_recom()
+          st.link_button("Go to the code script", "https://github.com/tranphuongmai/Python_Sklearn_Pandas")
      else:
           st.title("Hi👋! I'm Mai.")
           st.header("My favourite tools are Python for mass data analysis and PowerBI for visualization.")
