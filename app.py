@@ -67,6 +67,7 @@ def main():
           choice_sub = st.sidebar.selectbox("Drop down to choose", submenu)
           
           if choice_sub == "Exploration":
+              st.link_button("Go to the code script", "https://github.com/tranphuongmai/Python_Sklearn_Pandas")
               st.title(":blue[DATA EXPLORATION]")
               st.text(""" 
                In this project, we worked on 7 mass datasets of more than 10 millions
@@ -105,6 +106,7 @@ def main():
 
           elif choice_sub == "Preprocessing":
                st.title(":blue[DATA EXPLORATION]")
+               st.link_button("Go to the code script", "https://github.com/tranphuongmai/Python_Sklearn_Pandas")
                st.text("""
                After combining and filtering the KPI we have a dataframe with around 450k titles.
                Our filtering standard is only titles with average ratings above 5 and  only titles
@@ -114,6 +116,7 @@ def main():
 
      elif choice == "Movie Analysis":
           st.title(":blue[MOVIE ANALYSIS]")
+          st.link_button("Go to Power BI Dashboard ", "https://github.com/tranphuongmai/Python_Sklearn_Pandas/blob/main/KPIs%20of%20movies_project2.pbix")
           st.header("In the section Dataviz, we chose to visualize all the KPI related to our dataset by using PowerBI, a very strong and smart tool for Data Visualization.")
           st.text("""
                We created 3 dashboards containing all the filters with the idea of a filter 
@@ -127,7 +130,7 @@ def main():
 """)       
           st.image("asset/PBI1.png")
 
-          st.text("/n")
+          st.text(" ")
           st.text("""
                Second and third dashboard will show the imponent titles and production staffs 
                accoring to title categories, staff categories and released year. There is also 
