@@ -138,9 +138,9 @@ def about_me():
     st.text("""
    Building 3 dashboards that visualize KPIs regarding sales, finance, inventory and
    personnel issues of a toy distribution company. The retrieved KPI are requested by
-   the Database Language (MySQL) which are then connected to PowerBI for visualization.
-   We worked in teams of 3 people by using Agile methodology and Trello tools to manage
-   each person's tasks.   
+   Database Language (MySQL) which are then connected to PowerBI for visualization.
+   We worked in teams of 3 people by using Agile methodology and Trello tools to 
+   manage each person's tasks.   
     """)
     st.text("""
             💻 Used Tools:
