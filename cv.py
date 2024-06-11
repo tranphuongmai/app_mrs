@@ -129,7 +129,7 @@ def about_me():
             ▪️ Seaborn, Matplotlib, plotly express, Power BI
             ▪️ Agile, Trello, Canva, Streamlit
             """)
-    st.write("[Github](pro3)")
+    st.write("[Github]("https://github.com/tranphuongmai/Python_Sklearn_Pandas")")
     st.write('\n')
    
     # project 2 
@@ -147,7 +147,7 @@ def about_me():
             ▪️ MySQL 
             ▪️ Power BI
             ▪️ Power Point, Agile, Trello""")
-    st.write("[Github](pro2)")
+    st.write("[Github]("https://github.com/tranphuongmai/SQL_Ex_and_Poject/tree/main/project_toyandsci_SQL_PBI")")
     st.write('\n')
 
     # project 1 
@@ -165,7 +165,7 @@ def about_me():
             ▪️ MS Excel 
             ▪️ Power BI
             """)
-    st.write("[Github](pro1)")
+    st.write("[Github]("https://github.com/tranphuongmai")")
 
     
     # --- SKILLS ---
