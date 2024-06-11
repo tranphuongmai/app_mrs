@@ -8,7 +8,7 @@ def about_me():
 
     #css_file = current_dir / "styles" / "main.css"
     #resume_file = current_dir / "assets" / "CV.pdf"
-    profile_pic = "asset\pic_cv.jpg"
+    profile_pic = "asset/pic_cv.jpg"
 
 
     # --- GENERAL SETTINGS ---
