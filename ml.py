@@ -8,6 +8,7 @@ from sklearn.neighbors import NearestNeighbors
 
 
 def get_recom():
+    # User's input
     st.title("Now, it's time for our favorite movies.")
 
     st.header("Please enter a title")
@@ -15,11 +16,14 @@ def get_recom():
     title = st.text_input("Movie title", "The Avengers")
     st.write("The current movie title is", title)
 
-    
+    # Importing datasets
+    poster = pd.read_csv(r"data/poster.csv")
     df_return = pd.read_csv(r"data/return_movies.csv")
-   
-    df_return.insert(0, 'Title', df_return.pop('Title'))
 
+    # Combining 2 datasets
+    df_return = pd.concat([df_return, poster], axis=1)
+   
+    # Sorting values for puting weights on selected variables
     df_return = df_return.sort_values(['Type of title', 'Released year',                         
                          'Average Ratings', 'Duration', 'Votes'], 
                         ascending=[
@@ -108,13 +112,50 @@ def get_recom():
     neigh_dist, neigh_film = modelKNN.kneighbors(input_title_scaled, n_neighbors=11)
     film_similar = neigh_film[0][1:]
     user_film = neigh_film[0][:1]
+
+     # Create df of searched and returned titles
+
+    web_path = "https://image.tmdb.org/t/p/original"
+
+    st.header(":blue[Your favorite title:]")
+    search = df_return.iloc[user_film]
+    search_poster_path = search["poster_path"].to_string(index=False)
+       
     
-    try:
-       st.markdown("Your favorite title is:")
-       st.write(df_return.iloc[user_film]) 
-       st.markdown("We would like to recommend you 10 similar titles below. Hope you will enjoy them!")
-       st.write(df_return.iloc[film_similar])
-    except(KeyError, IndexError):
-       st.write("Sorry, that title does not exist. Please try another.")
+
+    col1, col2 = st.columns(2, gap="small")
+    with col1:
+        st.image(web_path + search_poster_path, width=230)
+
+    with col2:
+        st.write(search.to_string(columns=["Title"], header=False, index=False))
+        st.write("Released year:", search.to_string(columns=["Released year"], header=False, index=False))
+        st.write("Votes:", search.to_string(columns=[ "Votes"], header=False, index=False))
+        st.write("Ratings:",search.to_string(columns=["Average Ratings"], header=False, index=False))
+        st.write("Duration:",search.to_string(columns=["Duration"], header=False, index=False))
+        st.write(search.to_string(columns=["Genres"], header=False, index=False))
+
+    st.header(":blue[We would like to recommend you 10 similar titles below. Hope you will enjoy them!]")
+    recom = df_return.iloc[film_similar]
+    recom_poster_path = recom["poster_path"].to_string(index=False)
+    
+    # Loop to return each title
+
+    for i, row in recom.iterrows():
+        recom_poster_path = row["poster_path"]
+
+        col1, col2 = st.columns(2, gap="small")
+        with col1:
+            st.image(web_path + recom_poster_path, width=230)
+
+        with col2:
+            st.write(row["Title"])
+            st.write("Released year:", str(row["Released year"]))
+            st.write("Votes:", str(row["Votes"]))
+            st.write("Ratings:", str(row["Average Ratings"]))
+            st.write("Duration:", str(row["Duration"]))
+            st.write(row["Genres"])
+    
+   
 
    
