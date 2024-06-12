@@ -9,9 +9,9 @@ from sklearn.neighbors import NearestNeighbors
 
 def get_recom():
     # User's input
-    st.title("Now, it's time for our favorite movies.")
+    st.title(":blue[Now, it's time for our favorite movies.]")
 
-    st.header("Please enter a title")
+    st.header(":blue[Please enter a title]")
 
     title = st.text_input("Movie title", "The Avengers")
     st.write("The current movie title is", title)
