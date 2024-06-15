@@ -32,7 +32,7 @@ def main():
      choice = st.sidebar.selectbox("Menu", menu)
 
      if choice == "Home":
-          st.title("Welcome to my :blue[porfolio]!")
+          st.title("Welcome to my :blue[portfolio]!")
           st.title("My name is Mai Tran, a Data Analyst.")
           st.text("""
          This is a project I implemented with my classmate Halil Ibrahim at Wild Code 
