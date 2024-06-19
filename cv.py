@@ -68,7 +68,7 @@ def about_me():
     # --- JOB 1
     st.write("💼", "**Communications Manager/Marketing Department Assistant | Stage Group**")
     st.text("""
-            IT company targeting the Japanese market with resources located in HCMC, Vietnam
+            IT company targeting Japanese market with resources located in HCMC, Vietnam
             (06/2017 - 05/2018)
             """)
     st.text(
@@ -228,7 +228,7 @@ def about_me():
     st.text("""
             💠 Bachelor Degree (intenive course) in Data Analysis - Wild Code School
             France 2024
-                 ▪️ Data processing with algorithms in Python
+                 ▪️ Data preprocessing with algorithms in Python
                  ▪️ DataViz with database languages and visualization software
                  ▪️ Data mining with Pandas, SQL, DAX
             
@@ -248,8 +248,8 @@ def about_me():
    
     st.text("""
             🔹 Independent travel: discovering new places, culture and local food
-            🔹 Cooking: preparing and enjoying mediterranean and asian cuisine
-            🔹 Sport: hingking and yoga
+            🔹 Cooking: preparing, enjoying mediterranean and asian cuisine
+            🔹 Sport: hiking, yoga
            
                 """)
 
