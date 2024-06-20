@@ -45,7 +45,7 @@ def main():
          We then clean and remove missing values to get a final one with 430k titles.         
                   """)
           st.image("asset/home_page_filtering.png")
-          st.text("/n")
+          st.text(" ")
           st.text("""
 
          About the creation of the recommendation system, we first convert all the text 
@@ -88,19 +88,19 @@ def main():
                  st.header("The dataset 'title.akas.tsv'")
                  df2()
               if st.sidebar.button("DF3"):
-                 st.header("This is df3")
+                 st.header("The dataset 'title.crew.tsv'")
                  df3()
               if st.sidebar.button("DF4"):
-                 st.header("This is df4")
+                 st.header("The dataset 'title.episode.tsv'")
                  df4()
               if st.sidebar.button("DF5"):
-                 st.header("This is df5")
+                 st.header("The dataset 'title.basics.tsv'")
                  df5()            
               if st.sidebar.button("DF6"):
-                 st.header("This is df6")
+                 st.header("The dataset 'title.principals.tsv'")
                  df6()
               if st.sidebar.button("DF7"):
-                 st.header("This is df7")
+                 st.header("The dataset 'name.basics.tsv'")
                  df7()
 
 
