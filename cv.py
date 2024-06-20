@@ -19,7 +19,7 @@ def about_me():
     """
     ADRESS = "Paris, France"
     CONTACT = "+33 6 25 35 04 35"
-    EMAIL = "tran.pmpmai@gmail.com"
+    EMAIL = "ves.tranmai@gmail.com"
     SOCIAL_MEDIA = {" ": " ",
         "LinkedIn": "https://www.linkedin.com/in/tran-mai-341283306/",
         "GitHub": "https://github.com/tranphuongmai",
