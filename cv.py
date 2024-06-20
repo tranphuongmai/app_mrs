@@ -43,7 +43,7 @@ def about_me():
         st.write("📍", ADRESS)
         st.write("📱", CONTACT)
         st.write("📫", EMAIL)
-        #st.download_button(
+        st.download_button(
             label=" 📄 Download Resume",
             data="PDFbyte",
             #file_name=resume_file.name,
