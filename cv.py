@@ -21,7 +21,7 @@ def about_me():
     CONTACT = "+33 6 25 35 04 35"
     EMAIL = "ves.tranmai@gmail.com"
     SOCIAL_MEDIA = {" ": " ",
-        "LinkedIn": "https://www.linkedin.com/in/tran-mai-341283306/",
+        "LinkedIn": "https://www.linkedin.com/in/phuongmaitran0414/",
         "GitHub": "https://github.com/tranphuongmai",
         " ": " "
         }
@@ -43,7 +43,7 @@ def about_me():
         st.write("📍", ADRESS)
         st.write("📱", CONTACT)
         st.write("📫", EMAIL)
-        st.download_button(
+        #st.download_button(
             label=" 📄 Download Resume",
             data="PDFbyte",
             #file_name=resume_file.name,
