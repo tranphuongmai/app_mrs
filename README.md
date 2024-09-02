@@ -33,8 +33,11 @@ In addition, according to our client's expectation, we had to create this system
 
 ## Explaining step by step:
 Step 1: Explore and process 8 datasets. 
+
 Step 2: Analyze and reduce the size of main dataset. 
+
 Step 3: Create the MRS - Movie Recommendation Systeme - by doing feature engineering
+
 Step 4: Create Streamlit App for visualization of final product.
 
 ## Screenshots of the MRS on Streamlit
