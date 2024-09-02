@@ -42,7 +42,8 @@ Step 4: Create Streamlit App for visualization of final product.
 
 ## Screenshots of the MRS on Streamlit
 
-***Input favorit movie]***
+***Input favorit movie***
+
 ![Input favorit movie](asset/streamlit1.png)
 
 ***Recommend 10 similar movies***
