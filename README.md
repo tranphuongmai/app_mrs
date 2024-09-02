@@ -54,18 +54,16 @@ We created a dashboard of our analysis relatied to the KPIs of the final dataset
 
 ***1. Basic Indicators***
 
-![Basic Ind.](asset/BPI1.png)
+![Basic Ind.](asset/PBI1.png)
 
 ***2. The Crew Analysis***
 
-![The crew](asset/BPI2.png)
+![The crew](asset/PBI2.png)
 
 ***3. The Movies List***
 
-![The movies](asset/BPI3.png)
+![The movies](asset/PBI3.png)
 
 
 
-
-The link of streamlit page of the recommendation system: '(https://projectfilmreccom-dk3ib5yqhynkce3bc6igfd.streamlit.app/)'
 
