@@ -53,8 +53,9 @@ Step 4: Create Streamlit App for visualization of final product.
 
 ## Dashboard of the Project
 
-We created a dashboard of our analysis relatied to the KPIs of the final dataset on PowerBI. The screenshots of the dashboard are as follows:
+We created a dashboard of our analysis relatied to the KPIs of the final dataset on PowerBI.. In each page, there is a filter system which provides the interactive functions to all the charts.
 
+The screenshots of the dashboard are as follows:
 
 ***1. Basic Indicators***
 
