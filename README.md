@@ -1,6 +1,6 @@
 # The Movie Recommendation System
-## Second project implemented in the Intensive Course for Data Analyst at Wild Code School
-## by Halil Ibrahim Celikel and Mai Tran
+#### Second project implemented in the Intensive Course for Data Analyst at Wild Code School
+#### by Halil Ibrahim Celikel and Mai Tran
 
 ![Movies](asset/logo.png)
 
