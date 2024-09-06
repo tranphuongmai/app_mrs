@@ -1,13 +1,13 @@
 # Movie Recommendation System
 #### Second project implemented in the Intensive Course for Data Analyst at Wild Code School
-#### by Halil Ibrahim Celikel and Mai Tran
+#### by Mai Tran and Halil Ibrahim
 
 ![Movies](asset/logo.png)
 
 
 ## Summary of the Project
 
-This is a project I implemented with my classmate Mai Tran at Wild Code School, where i learnt to become a data analyst. Our target is to create the  MRF - Movie Recommendation System which will recommend similar titles to user's given title according to Genres, popularity, Duration, etc. We used the dataset of IMDB - the world's most popular and authoritative source for movie, TV and celebrity content. Find ratings and reviews for the newest movie and TV shows.
+This is a project I implemented with my classmate Halil Ibrahim at Wild Code School, where i learnt to become a data analyst. Our target is to create the  MRF - Movie Recommendation System which will recommend similar titles to user's given title according to Genres, popularity, Duration, etc. We used the dataset of IMDB - the world's most popular and authoritative source for movie, TV and celebrity content. Find ratings and reviews for the newest movie and TV shows.
 
 We started with 10.73 millions titles that we explored to understand the content of all the given datasets. We filtered to down-size into a dataset of 450k titles. We then clean and remove missing values to get a final one with 430k titles.
 
